@@ -17,7 +17,7 @@
          * @event onInput 輸入事件 handler
          * @param event 事件
          */
-        public onInput(event): void {
+        public onInput(event: any): void {
             this.$emit('termChange', event.target.value)
         }
     }

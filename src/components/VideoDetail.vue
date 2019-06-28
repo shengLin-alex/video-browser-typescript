@@ -22,7 +22,7 @@
         /**
          * 清單中選中的影片
          */
-        @Prop(Object) selectedVideo;
+        @Prop(Object) selectedVideo: any;
 
         /**
          * 影片實際網址

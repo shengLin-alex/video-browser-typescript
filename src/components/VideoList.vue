@@ -10,7 +10,7 @@
 
 <script lang="ts">
     import {Component, Prop, Vue} from 'vue-property-decorator';
-    import VideoListItem from "./VideoListItem";
+    import VideoListItem from "./VideoListItem.vue";
 
     /**
      * 影片搜尋清單
@@ -23,13 +23,13 @@
         /**
          * 搜尋到的影片集合
          */
-        @Prop(Array) videos: Array;
+        @Prop(Array) videos: Array<any> = [];
 
         /**
          * @event onVideoSelect 選中影片的點擊事件 handler
          * @param video 選中的影片
          */
-        public onVideoSelect(video): void {
+        public onVideoSelect(video: any): void {
             this.$emit('videoSelect', video);
         }
     }

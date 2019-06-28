@@ -19,7 +19,7 @@
         /**
          * 影片物件
          */
-        @Prop(Object) video;
+        @Prop(Object) video: any;
 
         /**
          * 縮圖網址

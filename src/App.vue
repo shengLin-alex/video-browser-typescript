@@ -11,9 +11,9 @@
 <script lang="ts">
     import { Component, Vue } from 'vue-property-decorator';
     import axios from 'axios';
-    import SearchBar from './components/SearchBar';
-    import VideoDetail from "./components/VideoDetail";
-    import VideoList from "./components/VideoList";
+    import SearchBar from './components/SearchBar.vue';
+    import VideoDetail from "./components/VideoDetail.vue";
+    import VideoList from "./components/VideoList.vue";
 
     /**
      * App主元件
@@ -30,7 +30,7 @@
         /**
          * 搜尋完成的影片列表
          */
-        public videos: Array = [];
+        public videos: Array<any> = [];
 
         /**
          * 被點擊的影片
@@ -63,7 +63,7 @@
          * @event onVideoSelect 影片選定時觸發事件
          * @param video 被選定的影片
          */
-        public onVideoSelect(video): void {
+        public onVideoSelect(video: any): void {
             this.selectedVideo = video;
         }
     }
